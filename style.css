@@ -25,3 +25,8 @@ margin: 2px;
    article{
       border-top: 2px solid black;
    }
+   @media (max-width: 400px) {
+      .nav-wrapper{
+         flex-direction: column;
+      }
+   }
