@@ -1,6 +1,6 @@
 body {
   border: 2px solid black;
-  height: 100vh;
+  min-height: 100vh;
 }
 .nav-links-wrapper {
 }
@@ -18,20 +18,25 @@ span {
   font-size: large;
   margin: 2px;
 }
-.heading {
+.heading,.review-text-heading , .footer-text {
   text-align: center;
   font-size: x-large;
   margin: 2rem 0;
 }
 article {
   border-top: 2px solid black;
+  border-bottom: 2px solid black;
   display: flex;
 }
 .projects {
   display: flex;
   flex-direction: column;
   border-right: 1px solid black;
-  width: 30%;
+  width: 20%;
+
+}
+.education{
+   width: 25%;
 }
 .projects > a {
   border-top: 1px solid black;
@@ -43,8 +48,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 0 0 5px;
-  width: 40%;
+  width: 45%;
   border-right: 1px solid black;
 }
 .work-experience > a,
@@ -60,18 +64,52 @@ li:before {
 content: "-";
 font-size: large;
  }
-@media (max-width: 400px) {
+ .reviews-section{
+   display: flex;
+
+ }
+ h3 , p{
+  padding-left: 6px;
+ }
+ .review-text-container{
+   width: 50%;
+   border: 1px solid black;
+   border-radius: 3rem;
+   height: fit-content;
+   padding: 1rem;
+ }
+@media (max-width: 470px) {
   .nav-wrapper,
   article {
     flex-direction: column;
     align-items: center;
   }
-  .work-experience,
-  .projects {
-    width: 100%;
+  .project-links-wrapper{
+    background-color: gainsboro;
   }
-  .work-experience {
+  .work-experience,
+  .projects  {
+    width: 100%;
+    border: none;
+  }
+  .education{
+    min-width: 100%;
+    border-top: 1px solid black;
+  }
+  .work-experience  {
     border-top: 1px solid black;
     margin-top: 1rem;
+    width: 100%;
   }
+  .reviews-section{
+   flex-direction: column;
+   align-items:  center;
+  }
+  .review-txt1, .review-txt2{
+   display: none;
+  }
+  body{
+    height: 100%;
+  }
+  
 }
