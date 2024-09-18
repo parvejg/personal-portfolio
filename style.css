@@ -56,7 +56,10 @@ article {
 .openSource-work {
   border-top: 1px solid black;
 }
-
+li:before { 
+content: "-";
+font-size: large;
+ }
 @media (max-width: 400px) {
   .nav-wrapper,
   article {
