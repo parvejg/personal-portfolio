@@ -66,17 +66,25 @@ font-size: large;
  }
  .reviews-section{
    display: flex;
+   height: 120px;
+   gap: 10px;
+   justify-content: center;
 
+ }
+ ul{
+  padding: 0 0 0 3px;
  }
  h3 , p{
   padding-left: 6px;
  }
  .review-text-container{
-   width: 50%;
    border: 1px solid black;
    border-radius: 3rem;
    height: fit-content;
    padding: 1rem;
+   align-items: center;
+   height: 80px;
+   width: 200px;
  }
 @media (max-width: 470px) {
   .nav-wrapper,
@@ -112,4 +120,19 @@ font-size: large;
     height: 100%;
   }
   
+}
+footer{
+  margin: 5rem 0;
+}
+.projects-page-wrapper , .projects-wrapper{
+  border-top: 1px solid black;
+}
+.projects-wrapper{
+  padding: 0.6rem;
+
+}
+.projects-wrapper > a{
+  text-decoration: none;
+  color: blue;
+  padding: 1rem;
 }
