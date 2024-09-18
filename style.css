@@ -1,54 +1,74 @@
-body{
-   border: 2px solid black;
-   height: 100vh;
+body {
+  border: 2px solid black;
+  height: 100vh;
 }
-.nav-links-wrapper{
-   }
- 
-   .nav-wrapper{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1rem;
-   }
-   .nav-link , span{
-text-decoration: none;
-color: black;
-font-size: large;
-margin: 2px;
-   }
-   .heading{
-      text-align: center;
-      font-size: x-large;
-      margin: 2rem 0;
-   }
-   article{
-      border-top: 2px solid black;
-      display: flex;
-   }
-.projects{
-   display: flex;
-   flex-direction: column;
-   border-right: 1px solid black ;
-   width: 30%;
-}
-.projects > a{
-   border-top: 1px solid black;
-   text-decoration: none;
-   padding: 8px 0 0 5px;
-   color: black;
-
+.nav-links-wrapper {
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.nav-link,
+span {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  margin: 2px;
+}
+.heading {
+  text-align: center;
+  font-size: x-large;
+  margin: 2rem 0;
+}
+article {
+  border-top: 2px solid black;
+  display: flex;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  width: 30%;
+}
+.projects > a {
+  border-top: 1px solid black;
+  text-decoration: none;
+  padding: 8px 0 0 5px;
+  color: black;
+}
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0 0 5px;
+  width: 40%;
+  border-right: 1px solid black;
+}
+.work-experience > a,
+.github-profile-link {
+  text-decoration: none;
+  color: blue;
+  padding: 3px;
+}
+.openSource-work {
+  border-top: 1px solid black;
+}
 
-
-
-
-
-
-   @media (max-width: 400px) {
-      .nav-wrapper , article{
-         flex-direction: column;
-         align-items: center;
-      }
-   }
+@media (max-width: 400px) {
+  .nav-wrapper,
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-experience,
+  .projects {
+    width: 100%;
+  }
+  .work-experience {
+    border-top: 1px solid black;
+    margin-top: 1rem;
+  }
+}
